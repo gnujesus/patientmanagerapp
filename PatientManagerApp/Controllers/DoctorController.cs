@@ -1,23 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PatientManagerApp.Core.Application.Interfaces.Services;
+using WebApp.PatientManagerApp.Middlewares;
 
 namespace PatientManagerApp.Controllers
 {
-    public class HomeController : Controller
+    public class DoctorController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IUserService _userService;
+        private readonly ValidateUserSession _validateUserSession;
 
-        public HomeController(ILogger<HomeController> logger)
+        public DoctorController(IUserService userService, ValidateUserSession validateUserSession)
         {
-            _logger = logger;
+            _userService = userService;
+            _validateUserSession = validateUserSession;
         }
 
 
         public IActionResult Index()
         {
-            return View();
-        }
-        public IActionResult Register()
-        {
+            if (!_validateUserSession.HasUser())
+            {
+                return RedirectToRoute(new { controller = "User", action = "Login" });
+            }
             return View();
         }
 

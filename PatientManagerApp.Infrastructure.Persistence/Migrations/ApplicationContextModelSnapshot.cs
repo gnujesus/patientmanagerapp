@@ -141,9 +141,10 @@ namespace PatientManagerApp.Infrastructure.Persistence.Migrations
                     b.Property<int>("ClinicId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Name")
+                    b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(100)
-                        .HasColumnType("int");
+                        .HasColumnType("varchar(100)");
 
                     b.HasKey("Id");
 

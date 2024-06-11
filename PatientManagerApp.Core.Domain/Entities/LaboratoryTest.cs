@@ -2,7 +2,7 @@
 {
     public class LaboratoryTest : BaseEntity
     {
-        public int Name { get; set; }
+        public string Name { get; set; }
         public int ClinicId { get; set; }
     }
 }

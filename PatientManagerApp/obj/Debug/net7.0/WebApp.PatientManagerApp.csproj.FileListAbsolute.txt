@@ -48,3 +48,4 @@ C:\projects\itla\PatientManagerApp\PatientManagerApp\obj\Debug\net7.0\WebApp.Pat
 C:\projects\itla\PatientManagerApp\PatientManagerApp\obj\Debug\net7.0\WebApp.PatientManagerApp.genruntimeconfig.cache
 C:\projects\itla\PatientManagerApp\PatientManagerApp\obj\Debug\net7.0\ref\WebApp.PatientManagerApp.dll
 C:\projects\itla\PatientManagerApp\PatientManagerApp\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp\obj\Debug\net7.0\WebApp.PatientManagerApp.sourcelink.json

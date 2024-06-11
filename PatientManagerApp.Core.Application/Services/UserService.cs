@@ -1,4 +1,5 @@
-﻿using PatientManagerApp.Core.Application.Enums;
+﻿using Microsoft.AspNetCore.Http;
+using PatientManagerApp.Core.Application.Enums;
 using PatientManagerApp.Core.Application.Helpers;
 using PatientManagerApp.Core.Application.Interfaces.Repositories;
 using PatientManagerApp.Core.Application.Interfaces.Services;
@@ -88,6 +89,7 @@ namespace PatientManagerApp.Core.Application.Services
 
             User user = new()
             {
+                Id = vm.Id,
                 Name = vm.Name,
                 LastName = vm.LastName,
                 Username = vm.Username,
@@ -110,6 +112,7 @@ namespace PatientManagerApp.Core.Application.Services
                 LastName = user.LastName,
                 Username = user.Username,
                 Email = user.Email,
+                UserType = user.UserType,
             }).ToList();
         }
 

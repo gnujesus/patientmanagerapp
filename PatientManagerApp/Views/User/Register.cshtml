@@ -1,14 +1,20 @@
 ﻿@model SaveUserViewModel;
+@using Microsoft.AspNetCore.Http
+@using PatientManagerApp.Core.Application.Enums
+@using PatientManagerApp.Core.Application.Helpers;
+@using WebApp.PatientManagerApp.Middlewares;
+@inject IHttpContextAccessor httpContext;
 
 @{
     ViewBag.Title = "Register";
+    UserViewModel User = httpContext.HttpContext.Session.Get<UserViewModel>("user");
 }
 
-<div class="container d-flex justify-content-center align-items-center vh-100">
+<div class="container d-flex justify-content-center align-items-center">
     <div class="card" style="width: 24rem;">
         <div class="card-body">
             <h5 class="card-title text-center">Register</h5>
-            <form method="post" asp-controller="User" asp-action="Register">
+            <form method="post" asp-controller="User" asp-action="@(User == null ? "Register" : "Update" )">
                 <div class="row mb-3">
                     <div class="col">
                         <label asp-for="Name" class="form-label">Name</label>
@@ -41,6 +47,21 @@
                     <input type="password" class="form-control" asp-for="ConfirmPassword">
                     <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                 </div>
+
+                @if(User != null){
+                    <div class="mb-3">
+                        <label asp-for="UserType" class="form-label">User Type</label>
+                        <select class="form-select" asp-for="UserType">
+                            <option value="@UsersEnum.Admin.ToString()">Administrator</option>
+                            <option value="@UsersEnum.Assistant.ToString()">Assistant</option>
+                        </select>
+                        <span asp-validation-for="UserType" class="text-danger"></span>
+                    </div>
+                }
+
+                <input type="hidden" asp-for="Id" style="position: absolute">
+                <input type="hidden" asp-for="ClinicId" style="position: absolute">
+
                 <button type="submit" class="btn btn-primary w-100">Register</button>
             </form>
             <div class="text-center mt-3">

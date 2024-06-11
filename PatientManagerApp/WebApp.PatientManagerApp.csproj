@@ -18,8 +18,4 @@
     <ProjectReference Include="..\PatientManagerApp.Infrastructure.Persistence\PatientManagerApp.Infrastructure.Persistence.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Middlewares\" />
-  </ItemGroup>
-
 </Project>

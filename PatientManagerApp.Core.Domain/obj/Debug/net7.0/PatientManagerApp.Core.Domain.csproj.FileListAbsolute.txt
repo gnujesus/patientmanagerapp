@@ -9,3 +9,4 @@ C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.
 C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\refint\PatientManagerApp.Core.Domain.dll
 C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\PatientManagerApp.Core.Domain.pdb
 C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\ref\PatientManagerApp.Core.Domain.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\PatientManagerApp.Core.Domain.sourcelink.json

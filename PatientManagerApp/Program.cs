@@ -1,6 +1,7 @@
 using PatientManagerApp.Core.Application;
 using PatientManagerApp.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Http;
+using WebApp.PatientManagerApp.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddPersistenceInfrastructure(builder.Configuration);
 builder.Services.AddApplicationLayer(builder.Configuration);
+
+builder.Services.AddTransient<ValidateUserSession, ValidateUserSession>();
 
 
 var app = builder.Build();

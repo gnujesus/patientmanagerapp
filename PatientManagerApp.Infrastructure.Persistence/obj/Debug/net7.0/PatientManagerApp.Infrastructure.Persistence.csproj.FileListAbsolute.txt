@@ -17,3 +17,4 @@ C:\projects\itla\PatientManagerApp\PatientManagerApp.Infrastructure.Persistence\
 C:\projects\itla\PatientManagerApp\PatientManagerApp.Infrastructure.Persistence\obj\Debug\net7.0\PatientManagerApp.Infrastructure.Persistence.pdb
 C:\projects\itla\PatientManagerApp\PatientManagerApp.Infrastructure.Persistence\obj\Debug\net7.0\PatientManagerApp.Infrastructure.Persistence.genruntimeconfig.cache
 C:\projects\itla\PatientManagerApp\PatientManagerApp.Infrastructure.Persistence\obj\Debug\net7.0\ref\PatientManagerApp.Infrastructure.Persistence.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Infrastructure.Persistence\obj\Debug\net7.0\PatientManagerApp.Infrastructure.Persistence.sourcelink.json

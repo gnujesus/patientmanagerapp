@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using PatientManagerApp.Core.Application.Interfaces.Services;
 using PatientManagerApp.Core.Application.ViewModels.User;
 using PatientManagerApp.Core.Application.Helpers;
+using WebApp.PatientManagerApp.Middlewares;
 
 namespace WebApp.PatientManagerApp.Controllers
 {
@@ -10,15 +11,23 @@ namespace WebApp.PatientManagerApp.Controllers
     {
 
         private readonly IUserService _userService;
+        private readonly ValidateUserSession _validateUserSession;
 
-        public UserController(IUserService userService)
+        public UserController(IUserService userService, ValidateUserSession validateUserSession)
         {
             _userService = userService;
+            _validateUserSession = validateUserSession;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            List<UserViewModel> userViewModelList = await _userService.GetAllViewModelAsync();
+
+            if (!_validateUserSession.HasUser())
+            {
+                return RedirectToRoute(new { controller = "User", action = "Login" });
+            }
+            return View(userViewModelList);
         }
 
         public IActionResult Login()
@@ -56,8 +65,6 @@ namespace WebApp.PatientManagerApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(SaveUserViewModel saveUserViewModel)
         {
-            List<UserViewModel> userViewModel = await _userService.GetAllViewModelAsync();
-
             if (!ModelState.IsValid)
             {
                 return View(saveUserViewModel);
@@ -66,5 +73,30 @@ namespace WebApp.PatientManagerApp.Controllers
             await _userService.Insert(saveUserViewModel);
             return RedirectToRoute(new { controller="Home", action="Index"});
         }
+
+        public async Task<IActionResult> Update(int id)
+        {
+            return View("Register", await _userService.GetByIdCreateViewModel(id));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(SaveUserViewModel saveUserViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(saveUserViewModel);
+            }
+
+            await _userService.Update(saveUserViewModel);
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _userService.Delete(id);
+            return RedirectToAction("Index");
+        }
+
     }
 }

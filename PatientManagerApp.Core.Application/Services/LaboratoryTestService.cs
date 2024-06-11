@@ -1,12 +1,10 @@
-﻿using PatientManagerApp.Core.Application.Interfaces.Repositories;
+﻿using Microsoft.AspNetCore.Http;
+using PatientManagerApp.Core.Application.Helpers;
+using PatientManagerApp.Core.Application.Interfaces.Repositories;
 using PatientManagerApp.Core.Application.Interfaces.Services;
 using PatientManagerApp.Core.Application.ViewModels.LaboratoryTest;
+using PatientManagerApp.Core.Application.ViewModels.User;
 using PatientManagerApp.Core.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PatientManagerApp.Core.Application.Services
 {

@@ -13,3 +13,4 @@ C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\
 C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\refint\PatientManagerApp.Core.Application.dll
 C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\PatientManagerApp.Core.Application.pdb
 C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\ref\PatientManagerApp.Core.Application.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\PatientManagerApp.Core.Application.sourcelink.json

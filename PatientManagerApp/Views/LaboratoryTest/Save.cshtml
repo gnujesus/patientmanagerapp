@@ -1,0 +1,23 @@
+﻿@model SaveLaboratoryTestViewModel
+
+@{
+    bool editMode = Model.Id != 0 ? true : false;
+}
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card" style="width: 24rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">Laboratory Test</h5>
+            <form method="post" asp-controller="LaboratoryTest" asp-action="@(Model.Id != 0 ? "Update" : "Save")">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Name</label>
+                    <input type="text" class="form-control" asp-for="Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <input type="hidden" value="@Model.Id" asp-for="Id" style="position: absolute;"/>
+                <input type="hidden" value="@Model.ClinicId" asp-for="ClinicId" style="position: absolute;"/>
+                <button type="submit" class="btn btn-success w-100">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
