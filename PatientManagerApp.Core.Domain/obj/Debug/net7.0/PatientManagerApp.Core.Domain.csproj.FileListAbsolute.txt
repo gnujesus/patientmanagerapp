@@ -1,0 +1,11 @@
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\bin\Debug\net7.0\PatientManagerApp.Core.Domain.deps.json
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\bin\Debug\net7.0\PatientManagerApp.Core.Domain.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\bin\Debug\net7.0\PatientManagerApp.Core.Domain.pdb
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\PatientManagerApp.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\PatientManagerApp.Core.Domain.AssemblyInfoInputs.cache
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\PatientManagerApp.Core.Domain.AssemblyInfo.cs
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\PatientManagerApp.Core.Domain.csproj.CoreCompileInputs.cache
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\PatientManagerApp.Core.Domain.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\refint\PatientManagerApp.Core.Domain.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\PatientManagerApp.Core.Domain.pdb
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Domain\obj\Debug\net7.0\ref\PatientManagerApp.Core.Domain.dll

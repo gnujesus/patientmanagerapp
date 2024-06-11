@@ -1,0 +1,29 @@
+﻿@model LoginUserViewModel;
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">Login</h5>
+
+            @Html.ValidationSummary(false, "", new{@class="text-danger"})
+            <form method="post" asp-controller="User" asp-action="Login">
+                <div class="mb-3">
+                    <label asp-for="Username" class="form-label">Username</label>
+                    <input type="text" class="form-control" asp-for="Username">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <input type="password" class="form-control" asp-for="Password">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Log In</button>
+            </form>
+            <div class="text-center mt-3">
+                <a asp-controller="User" asp-action="Register">Don't have an account? Register</a>
+            </div>
+        </div>
+    </div>
+</div>

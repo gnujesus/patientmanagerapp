@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Users";
+    var users = new List<dynamic>
+    {
+        new { Username = "john_doe", Name = "John", LastName = "Doe", Email = "john.doe@example.com", UserType = "Admin" },
+        new { Username = "jane_smith", Name = "Jane", LastName = "Smith", Email = "jane.smith@example.com", UserType = "Assistant" },
+        // Add more users here
+    };
+}
+
+<a class="btn btn-success">Create</a>
+<div class="container mt-4">
+    <h2 class="mb-4">User List</h2>
+    <ul class="list-group">
+        @foreach (var user in users)
+        {
+            <li class="list-group-item">
+                <h5>@user.Username</h5>
+                <p class="mb-1">
+                    <small class="text-muted">Name: @user.Name @user.LastName</small><br>
+                    <small class="text-muted">Email: @user.Email</small><br>
+                    <small class="text-muted">User Type: @user.UserType</small>
+                </p>
+                <div class="d-flex justify-content-end">
+                    <a href="/Users/Edit/@user.Username" class="btn btn-warning btn-sm me-2">Edit</a>
+                    <a href="/Users/Delete/@user.Username" class="btn btn-danger btn-sm">Delete</a>
+                </div>
+            </li>
+        }
+    </ul>
+</div>

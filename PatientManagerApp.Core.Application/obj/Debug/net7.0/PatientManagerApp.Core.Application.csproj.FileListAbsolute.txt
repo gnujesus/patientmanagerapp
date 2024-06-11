@@ -1,0 +1,15 @@
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\bin\Debug\net7.0\PatientManagerApp.Core.Application.deps.json
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\bin\Debug\net7.0\PatientManagerApp.Core.Application.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\bin\Debug\net7.0\PatientManagerApp.Core.Application.pdb
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\bin\Debug\net7.0\PatientManagerApp.Core.Domain.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\bin\Debug\net7.0\PatientManagerApp.Core.Domain.pdb
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\PatientManagerApp.Core.Application.csproj.AssemblyReference.cache
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\PatientManagerApp.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\PatientManagerApp.Core.Application.AssemblyInfoInputs.cache
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\PatientManagerApp.Core.Application.AssemblyInfo.cs
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\PatientManagerApp.Core.Application.csproj.CoreCompileInputs.cache
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\PatientM.09DD1397.Up2Date
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\PatientManagerApp.Core.Application.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\refint\PatientManagerApp.Core.Application.dll
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\PatientManagerApp.Core.Application.pdb
+C:\projects\itla\PatientManagerApp\PatientManagerApp.Core.Application\obj\Debug\net7.0\ref\PatientManagerApp.Core.Application.dll

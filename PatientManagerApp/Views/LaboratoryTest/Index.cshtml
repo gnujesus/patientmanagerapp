@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Laboratory Tests";
+
+    var laboratoryTests = new List<dynamic>
+    {
+        new { Id = 1, Name = "Blood Test", ClinicId = 201 },
+        new { Id = 2, Name = "Urine Test", ClinicId = 202 },
+        new { Id = 3, Name = "X-Ray", ClinicId = 203 },
+        new { Id = 4, Name = "MRI", ClinicId = 204 },
+        new { Id = 5, Name = "CT Scan", ClinicId = 205 },
+        new { Id = 6, Name = "Ultrasound", ClinicId = 206 },
+        new { Id = 7, Name = "ECG", ClinicId = 207 }
+    };
+}
+
+<a class="btn btn-success">Create</a>
+<div class="container mt-4">
+    <h2 class="mb-4">Laboratory Tests List</h2>
+    <ul class="list-group">
+        @foreach (var test in laboratoryTests)
+        {
+            <li class="list-group-item">
+                <h5>Test ID: @test.Id</h5>
+                <p class="mb-1">
+                    <small class="text-muted">Name: @test.Name</small><br>
+                    <small class="text-muted">Clinic ID: @test.ClinicId</small>
+                </p>
+                <div class="d-flex justify-content-end">
+                    <a href="/LaboratoryTests/Edit/@test.Id" class="btn btn-warning btn-sm me-2">Edit</a>
+                    <a href="/LaboratoryTests/Delete/@test.Id" class="btn btn-danger btn-sm">Delete</a>
+                </div>
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Laboratory Results";
+
+    var laboratoryResults = new List<dynamic>
+    {
+        new { Id = 1, Results = "Blood Test: Normal", PatientId = 101, ClinicId = 201 },
+        new { Id = 2, Results = "Urine Test: Normal", PatientId = 102, ClinicId = 202 },
+        new { Id = 3, Results = "X-Ray: Clear", PatientId = 103, ClinicId = 203 },
+        new { Id = 4, Results = "MRI: No Issues", PatientId = 104, ClinicId = 204 },
+        new { Id = 5, Results = "Blood Test: Elevated WBC", PatientId = 105, ClinicId = 205 },
+        new { Id = 6, Results = "Urine Test: Infection", PatientId = 106, ClinicId = 206 },
+        new { Id = 7, Results = "X-Ray: Fracture", PatientId = 107, ClinicId = 207 }
+    };
+}
+
+<a class="btn btn-success">Create</a>
+<div class="container mt-4">
+    <h2 class="mb-4">Laboratory Results List</h2>
+    <ul class="list-group">
+        @foreach (var result in laboratoryResults)
+        {
+            <li class="list-group-item">
+                <h5>Result ID: @result.Id</h5>
+                <p class="mb-1">
+                    <small class="text-muted">Results: @result.Results</small><br>
+                    <small class="text-muted">Patient ID: @result.PatientId</small><br>
+                    <small class="text-muted">Clinic ID: @result.ClinicId</small>
+                </p>
+                <div class="d-flex justify-content-end">
+                    <a href="/LaboratoryResults/Edit/@result.Id" class="btn btn-warning btn-sm me-2">Edit</a>
+                    <a href="/LaboratoryResults/Delete/@result.Id" class="btn btn-danger btn-sm">Delete</a>
+                </div>
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Patients";
+}
+
+<a class="btn btn-success">Create</a>
+<div class="container mt-4">
+    <div class="row">
+        @for (int i = 0; i < 9; i++)
+        {
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Patient Photo">
+                    <div class="card-body">
+                        <h5 class="card-title">Patient Jane Doe</h5>
+                        <p class="card-text">
+                            <small class="text-muted">Email: janedoe@example.com</small><br>
+                            <small class="text-muted">Phone: (987) 654-3210</small>
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <a href="/Patients/Edit/@i" class="btn btn-warning">Edit</a>
+                            <a href="/Patients/Delete/@i" class="btn btn-danger">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

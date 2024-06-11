@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Appointments";
+
+    var appointments = new List<dynamic>
+    {
+        new { Id = 1, PatientId = 101, DoctorId = 201, AppointmentDate = DateTime.Now, ReasonForTheAppointment = "Check-up", Status = "Scheduled" },
+        new { Id = 2, PatientId = 102, DoctorId = 202, AppointmentDate = DateTime.Now.AddHours(2), ReasonForTheAppointment = "Consultation", Status = "Completed" },
+        new { Id = 3, PatientId = 103, DoctorId = 203, AppointmentDate = DateTime.Now.AddDays(1), ReasonForTheAppointment = "Follow-up", Status = "Pending" },
+        new { Id = 4, PatientId = 104, DoctorId = 204, AppointmentDate = DateTime.Now.AddDays(2), ReasonForTheAppointment = "Surgery", Status = "Scheduled" },
+        new { Id = 5, PatientId = 105, DoctorId = 205, AppointmentDate = DateTime.Now.AddDays(3), ReasonForTheAppointment = "Routine", Status = "Cancelled" },
+        new { Id = 6, PatientId = 106, DoctorId = 206, AppointmentDate = DateTime.Now.AddDays(4), ReasonForTheAppointment = "Emergency", Status = "Completed" },
+        new { Id = 7, PatientId = 107, DoctorId = 207, AppointmentDate = DateTime.Now.AddDays(5), ReasonForTheAppointment = "Dental", Status = "Scheduled" }
+    };
+}
+
+<a class="btn btn-success">Create</a>
+<div class="container mt-4">
+    <h2 class="mb-4">Appointment List</h2>
+    <ul class="list-group">
+        @foreach (var appointment in appointments)
+        {
+            <li class="list-group-item">
+                <h5>Appointment ID: @appointment.Id</h5>
+                <p class="mb-1">
+                    <small class="text-muted">Patient ID: @appointment.PatientId</small><br>
+                    <small class="text-muted">Doctor ID: @appointment.DoctorId</small><br>
+                    <small class="text-muted">Date: @appointment.AppointmentDate.ToString("g")</small><br>
+                    <small class="text-muted">Reason: @appointment.ReasonForTheAppointment</small><br>
+                    <small class="text-muted">Status: @appointment.Status</small>
+                </p>
+                <div class="d-flex justify-content-end">
+                    <a href="/Appointments/Edit/@appointment.Id" class="btn btn-warning btn-sm me-2">Edit</a>
+                    <a href="/Appointments/Delete/@appointment.Id" class="btn btn-danger btn-sm">Delete</a>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
