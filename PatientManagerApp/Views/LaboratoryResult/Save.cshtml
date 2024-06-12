@@ -1,0 +1,51 @@
+﻿@model SaveLaboratoryResultViewModel
+
+@{
+    bool editMode = Model.Id != 0 ? true : false;
+}
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card" style="width: 24rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">Laboratory Result</h5>
+            <form method="post" asp-controller="LaboratoryResult" asp-action="@(Model.Id != 0 ? "Update" : "Save")">
+                <div class="mb-3">
+                    <label asp-for="PatientId" class="form-label">Patient</label>
+                    <select class="form-select" asp-for="PatientId" asp-items="ViewBag.Patients"></select>
+                    <span asp-validation-for="PatientId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Laboratory Tests</label>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Tests
+                        </button>
+                        <ul class="dropdown-menu p-3" aria-labelledby="dropdownMenuButton" style="max-height: 200px; overflow-y: auto;">
+                            @foreach (var test in ViewBag.LaboratoryTests as List<SelectListItem>)
+                            {
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="LaboratoryTests" value="@test.Value" class="form-check-input me-2" autocomplete="off">
+                                        @test.Text
+                                    </label>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                    <span asp-validation-for="LaboratoryTests" class="text-danger"></span>
+                </div>
+
+                <input type="hidden" value="@Model.Id" asp-for="Id" style="position: absolute;" />
+                <input type="hidden" value="@Model.ClinicId" asp-for="ClinicId" style="position: absolute;" />
+                <button type="submit" class="btn btn-success w-100">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .dropdown-menu input[type="checkbox"] {
+        cursor: pointer;
+    }
+</style>

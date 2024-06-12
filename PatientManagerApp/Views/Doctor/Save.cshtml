@@ -8,7 +8,7 @@
     <div class="card" style="width: 30rem;">
         <div class="card-body">
             <h5 class="card-title text-center">Register Doctor</h5>
-            <form method="post" asp-controller="Doctor" asp-action="Save" enctype="multipart/form-data">
+            <form method="post" asp-controller="Doctor" asp-action="@(editMode ? "Update" : "Save")" enctype="multipart/form-data">
                 <div class="row mb-3">
                     <div class="col">
                         <label asp-for="Name" class="form-label">Name</label>
@@ -39,7 +39,9 @@
 
                 @if (editMode)
                 {
-                    <input type="hidden" value="@Model.Id" asp-for="Id" style="position:absolute;"/>
+                    <input type="hidden" asp-for="Id" style="position:absolute;"/>
+                    <input type="hidden" asp-for="ClinicId" style="position:absolute;"/>
+                    <input type="hidden" asp-for="PicturePath" style="position:absolute;"/>
                 }
 
                 <button type="submit" class="btn btn-success w-100">Save</button>

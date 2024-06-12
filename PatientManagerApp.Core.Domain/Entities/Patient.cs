@@ -12,8 +12,7 @@
         public bool HasAlergies {  get; set; }
         public int ClinicId { get; set; }
 
-        // No idea on how am I going to do this
-        public string Picture { get; set; }
+        public string PicturePath { get; set; }
 
         public ICollection<Appointment>? Appointments { get; set; }
         public ICollection<LaboratoryResult>? LaboratoryResults { get; set; }

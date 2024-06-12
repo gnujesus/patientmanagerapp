@@ -25,7 +25,8 @@ namespace PatientManagerApp.Core.Application.Services
             {
                 PatientId = vm.PatientId,
                 ClinicId = vm.ClinicId,
-                Results = vm.Results
+                Results = vm.Results,
+                Status = vm.Status
             };
 
             await _laboratoryResultRepository.InsertAsync(result);
@@ -44,7 +45,8 @@ namespace PatientManagerApp.Core.Application.Services
                 Id = vm.Id,
                 PatientId = vm.PatientId,
                 ClinicId = vm.ClinicId,
-                Results = vm.Results
+                Results = vm.Results,
+                Status = vm.Status
             };
 
             await _laboratoryResultRepository.UpdateAsync(result);
@@ -60,6 +62,7 @@ namespace PatientManagerApp.Core.Application.Services
                 PatientId = result.PatientId,
                 ClinicId = result.ClinicId,
                 Results = result.Results,
+                Status = result.Status
             }).ToList();
         }
 
@@ -71,7 +74,8 @@ namespace PatientManagerApp.Core.Application.Services
                 Id = result.Id,
                 PatientId = result.PatientId,
                 ClinicId = result.ClinicId,
-                Results = result.Results
+                Results = result.Results,
+                Status = result.Status
             };
 
             return vm;

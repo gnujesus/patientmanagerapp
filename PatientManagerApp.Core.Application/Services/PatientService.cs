@@ -19,7 +19,7 @@ namespace PatientManagerApp.Core.Application.Services
             _patientRepository = repository;
         }
 
-        public async Task Insert(SavePatientViewModel vm)
+        public async Task<SavePatientViewModel> Insert(SavePatientViewModel vm)
         {
             Patient patient = new()
             {
@@ -32,10 +32,28 @@ namespace PatientManagerApp.Core.Application.Services
                 IsSmoker = vm.IsSmoker,
                 HasAlergies = vm.HasAlergies,
                 ClinicId = vm.ClinicId,
-                Picture = vm.Picture
+                PicturePath = vm.PicturePath
             };
 
-            await _patientRepository.InsertAsync(patient);
+            patient = await _patientRepository.InsertAsync(patient);
+
+            SavePatientViewModel patientVm = new()
+            {
+                Id = patient.Id,
+                Name = patient.Name,
+                LastName = patient.LastName,
+                Email = patient.Email,
+                PhoneNumber = patient.PhoneNumber,
+                Address = patient.Address,
+                BirthDate = patient.BirthDate,
+                IsSmoker = patient.IsSmoker,
+                HasAlergies = patient.HasAlergies,
+                ClinicId = patient.ClinicId,
+                PicturePath = patient.PicturePath
+            };
+
+            return patientVm;
+
         }
 
         public async Task Delete(int id)
@@ -46,20 +64,19 @@ namespace PatientManagerApp.Core.Application.Services
 
         public async Task Update(SavePatientViewModel vm)
         {
-            Patient patient = new()
-            {
-                Id = vm.Id,
-                Name = vm.Name,
-                LastName = vm.LastName,
-                Email = vm.Email,
-                PhoneNumber = vm.PhoneNumber,
-                Address = vm.Address,
-                BirthDate = vm.BirthDate,
-                IsSmoker = vm.IsSmoker,
-                HasAlergies = vm.HasAlergies,
-                ClinicId = vm.ClinicId,
-                Picture = vm.Picture
-            };
+            Patient patient = await _patientRepository.GetByIdAsync(vm.Id);
+
+            patient.Id = vm.Id;
+            patient.Name = vm.Name;
+            patient.LastName = vm.LastName;
+            patient.Email = vm.Email;
+            patient.PhoneNumber = vm.PhoneNumber;
+            patient.Address = vm.Address;
+            patient.BirthDate = vm.BirthDate;
+            patient.IsSmoker = vm.IsSmoker;
+            patient.HasAlergies = vm.HasAlergies;
+            patient.ClinicId = vm.ClinicId;
+            patient.PicturePath = vm.PicturePath;
 
             await _patientRepository.UpdateAsync(patient);
         }
@@ -80,7 +97,7 @@ namespace PatientManagerApp.Core.Application.Services
                 IsSmoker = patient.IsSmoker,
                 HasAlergies = patient.HasAlergies,
                 ClinicId = patient.ClinicId,
-                Picture = patient.Picture
+                PicturePath = patient.PicturePath
             }).ToList();
         }
 
@@ -99,10 +116,15 @@ namespace PatientManagerApp.Core.Application.Services
                 IsSmoker = patient.IsSmoker,
                 HasAlergies = patient.HasAlergies,
                 ClinicId = patient.ClinicId,
-                Picture = patient.Picture
+                PicturePath = patient.PicturePath
             };
 
             return vm;
         }
+      async Task IGenericService<PatientViewModel, SavePatientViewModel>.Insert(SavePatientViewModel vm)
+        {
+            await Insert(vm);
+        }
+
     }
 }

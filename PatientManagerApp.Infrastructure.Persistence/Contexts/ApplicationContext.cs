@@ -177,7 +177,7 @@ namespace PatientManagerApp.Infrastructure.Persistence.Contexts
                 .IsRequired();
 
             modelBuilder.Entity<Patient>()
-                .Property(p => p.Picture)
+                .Property(p => p.PicturePath)
                 .HasMaxLength(255);
 
             modelBuilder.Entity<Patient>()

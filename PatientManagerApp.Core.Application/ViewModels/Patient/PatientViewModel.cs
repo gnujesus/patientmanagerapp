@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PatientManagerApp.Core.Application.ViewModels.Patient
 {
-    public class SavePatientViewModel
+    public class PatientViewModel
     {
 
         public int Id { get; set; } 
@@ -19,8 +19,6 @@ namespace PatientManagerApp.Core.Application.ViewModels.Patient
         public bool IsSmoker { get; set; }
         public bool HasAlergies { get; set; }
         public int ClinicId { get; set; }
-
-        // No idea on how am I going to do this
-        public string Picture { get; set; }
+        public string PicturePath { get; set; }
     }
 }

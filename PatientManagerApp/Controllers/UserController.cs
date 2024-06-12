@@ -59,7 +59,8 @@ namespace WebApp.PatientManagerApp.Controllers
 
         public async Task<IActionResult> Register()
         {
-            return View();
+            SaveUserViewModel userVm = new();
+            return View(userVm);
         }
 
         [HttpPost]

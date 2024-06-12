@@ -3,68 +3,48 @@
   "WorkspaceRootPath": "C:\\projects\\itla\\PatientManagerApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|solutionrelative:patientmanagerapp\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|solutionrelative:patientmanagerapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\viewmodels\\doctor\\doctorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\viewmodels\\doctor\\doctorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|solutionrelative:patientmanagerapp\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp\\views\\doctor\\save.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|solutionrelative:patientmanagerapp\\views\\doctor\\save.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\viewmodels\\doctor\\savedoctorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\viewmodels\\doctor\\savedoctorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F748A5F-D365-48AD-B66A-2D703104ADDD}|PatientManagerApp.Core.Domain\\PatientManagerApp.Core.Domain.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.domain\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F748A5F-D365-48AD-B66A-2D703104ADDD}|PatientManagerApp.Core.Domain\\PatientManagerApp.Core.Domain.csproj|solutionrelative:patientmanagerapp.core.domain\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3641A470-B809-4F82-93D8-2F871BDFEC37}|PatientManagerApp.Infrastructure.Persistence\\PatientManagerApp.Infrastructure.Persistence.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.infrastructure.persistence\\migrations\\20240611204520_updatepathfieldtourl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3641A470-B809-4F82-93D8-2F871BDFEC37}|PatientManagerApp.Infrastructure.Persistence\\PatientManagerApp.Infrastructure.Persistence.csproj|solutionrelative:patientmanagerapp.infrastructure.persistence\\migrations\\20240611204520_updatepathfieldtourl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\services\\laboratorytestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\services\\laboratorytestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3641A470-B809-4F82-93D8-2F871BDFEC37}|PatientManagerApp.Infrastructure.Persistence\\PatientManagerApp.Infrastructure.Persistence.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.infrastructure.persistence\\contexts\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3641A470-B809-4F82-93D8-2F871BDFEC37}|PatientManagerApp.Infrastructure.Persistence\\PatientManagerApp.Infrastructure.Persistence.csproj|solutionrelative:patientmanagerapp.infrastructure.persistence\\contexts\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|solutionrelative:patientmanagerapp\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\services\\laboratoryresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\services\\laboratoryresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\interfaces\\services\\igenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\interfaces\\services\\igenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp\\controllers\\laboratoryresultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|solutionrelative:patientmanagerapp\\controllers\\laboratoryresultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\interfaces\\services\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\interfaces\\services\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\viewmodels\\doctor\\savedoctorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\viewmodels\\doctor\\savedoctorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|solutionrelative:patientmanagerapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\viewmodels\\laboratoryresult\\savelaboratoryresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\viewmodels\\laboratoryresult\\savelaboratoryresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp\\views\\laboratoryresult\\save.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E75353CD-A456-419D-9353-6F3D95B14224}|PatientManagerApp\\WebApp.PatientManagerApp.csproj|solutionrelative:patientmanagerapp\\views\\laboratoryresult\\save.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\viewmodels\\laboratorytest\\savelaboratorytestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\viewmodels\\laboratorytest\\savelaboratorytestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\viewmodels\\laboratoryresult\\laboratoryresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\viewmodels\\laboratoryresult\\laboratoryresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F748A5F-D365-48AD-B66A-2D703104ADDD}|PatientManagerApp.Core.Domain\\PatientManagerApp.Core.Domain.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.domain\\entities\\laboratoryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F748A5F-D365-48AD-B66A-2D703104ADDD}|PatientManagerApp.Core.Domain\\PatientManagerApp.Core.Domain.csproj|solutionrelative:patientmanagerapp.core.domain\\entities\\laboratoryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F748A5F-D365-48AD-B66A-2D703104ADDD}|PatientManagerApp.Core.Domain\\PatientManagerApp.Core.Domain.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.domain\\entities\\laboratorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F748A5F-D365-48AD-B66A-2D703104ADDD}|PatientManagerApp.Core.Domain\\PatientManagerApp.Core.Domain.csproj|solutionrelative:patientmanagerapp.core.domain\\entities\\laboratorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|c:\\projects\\itla\\patientmanagerapp\\patientmanagerapp.core.application\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B32D10-700A-4A8D-85F3-8DB0954CC981}|PatientManagerApp.Core.Application\\PatientManagerApp.Core.Application.csproj|solutionrelative:patientmanagerapp.core.application\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,214 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 309,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Controllers\\UserController.cs",
-              "RelativeToolTip": "PatientManagerApp\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAwwFsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T22:42:12.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\Services\\UserService.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Services\\UserService.cs",
-              "RelativeToolTip": "PatientManagerApp.Core.Application\\Services\\UserService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwFYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T22:40:59.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Views\\Doctor\\Index.cshtml",
-              "RelativeDocumentMoniker": "PatientManagerApp\\Views\\Doctor\\Index.cshtml",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Views\\Doctor\\Index.cshtml",
-              "RelativeToolTip": "PatientManagerApp\\Views\\Doctor\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-11T21:53:08.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20240611204520_UpdatePathFieldToUrl.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Infrastructure.Persistence\\Migrations\\20240611204520_UpdatePathFieldToUrl.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp.Infrastructure.Persistence\\Migrations\\20240611204520_UpdatePathFieldToUrl.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Infrastructure.Persistence\\Migrations\\20240611204520_UpdatePathFieldToUrl.cs",
-              "RelativeToolTip": "PatientManagerApp.Infrastructure.Persistence\\Migrations\\20240611204520_UpdatePathFieldToUrl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T20:45:20.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Infrastructure.Persistence\\Contexts\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp.Infrastructure.Persistence\\Contexts\\ApplicationContext.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Infrastructure.Persistence\\Contexts\\ApplicationContext.cs",
-              "RelativeToolTip": "PatientManagerApp.Infrastructure.Persistence\\Contexts\\ApplicationContext.cs",
-              "ViewState": "AQIAAIkAAAAAAAAAAAAmwNAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T20:42:56.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DoctorViewModel.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\ViewModels\\Doctor\\DoctorViewModel.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\ViewModels\\Doctor\\DoctorViewModel.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\ViewModels\\Doctor\\DoctorViewModel.cs",
-              "RelativeToolTip": "PatientManagerApp.Core.Application\\ViewModels\\Doctor\\DoctorViewModel.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAADwvwoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T20:36:29.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Domain\\Entities\\Doctor.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp.Core.Domain\\Entities\\Doctor.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Domain\\Entities\\Doctor.cs",
-              "RelativeToolTip": "PatientManagerApp.Core.Domain\\Entities\\Doctor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T20:36:19.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IDoctorService.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Interfaces\\Services\\IDoctorService.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\Interfaces\\Services\\IDoctorService.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Interfaces\\Services\\IDoctorService.cs",
-              "RelativeToolTip": "PatientManagerApp.Core.Application\\Interfaces\\Services\\IDoctorService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T20:12:17.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LaboratoryTestService.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Services\\LaboratoryTestService.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\Services\\LaboratoryTestService.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Services\\LaboratoryTestService.cs",
-              "RelativeToolTip": "PatientManagerApp.Core.Application\\Services\\LaboratoryTestService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T20:03:07.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "LaboratoryResultService.cs",
               "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Services\\LaboratoryResultService.cs",
               "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\Services\\LaboratoryResultService.cs",
               "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Services\\LaboratoryResultService.cs",
               "RelativeToolTip": "PatientManagerApp.Core.Application\\Services\\LaboratoryResultService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAMAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T20:01:40.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IGenericService.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Interfaces\\Services\\IGenericService.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\Interfaces\\Services\\IGenericService.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Interfaces\\Services\\IGenericService.cs",
-              "RelativeToolTip": "PatientManagerApp.Core.Application\\Interfaces\\Services\\IGenericService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T19:59:02.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DoctorService.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Services\\DoctorService.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\Services\\DoctorService.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Services\\DoctorService.cs",
-              "RelativeToolTip": "PatientManagerApp.Core.Application\\Services\\DoctorService.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAswC8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T19:56:18.887Z",
+              "WhenOpened": "2024-06-12T20:03:21.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "PatientManagerApp\\Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "PatientManagerApp\\Controllers\\DoctorController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAkwEIAAAAIAAAA",
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "PatientManagerApp\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "PatientManagerApp\\Controllers\\PatientController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAswFoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T15:36:55.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "PatientManagerApp\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "PatientManagerApp\\Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-11T15:35:48.585Z",
+              "WhenOpened": "2024-06-12T19:38:17.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Save.cshtml",
-              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Views\\Doctor\\Save.cshtml",
-              "RelativeDocumentMoniker": "PatientManagerApp\\Views\\Doctor\\Save.cshtml",
-              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Views\\Doctor\\Save.cshtml",
-              "RelativeToolTip": "PatientManagerApp\\Views\\Doctor\\Save.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACcAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-11T15:35:29.835Z",
+              "Title": "SaveLaboratoryTestViewModel.cs",
+              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\ViewModels\\LaboratoryTest\\SaveLaboratoryTestViewModel.cs",
+              "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\ViewModels\\LaboratoryTest\\SaveLaboratoryTestViewModel.cs",
+              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\ViewModels\\LaboratoryTest\\SaveLaboratoryTestViewModel.cs",
+              "RelativeToolTip": "PatientManagerApp.Core.Application\\ViewModels\\LaboratoryTest\\SaveLaboratoryTestViewModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAkwAwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:33:36.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "LaboratoryResultController.cs",
+              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Controllers\\LaboratoryResultController.cs",
+              "RelativeDocumentMoniker": "PatientManagerApp\\Controllers\\LaboratoryResultController.cs",
+              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Controllers\\LaboratoryResultController.cs",
+              "RelativeToolTip": "PatientManagerApp\\Controllers\\LaboratoryResultController.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAwFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:30:18.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Save.cshtml",
+              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Views\\LaboratoryResult\\Save.cshtml",
+              "RelativeDocumentMoniker": "PatientManagerApp\\Views\\LaboratoryResult\\Save.cshtml",
+              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\Views\\LaboratoryResult\\Save.cshtml",
+              "RelativeToolTip": "PatientManagerApp\\Views\\LaboratoryResult\\Save.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T19:27:48.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LaboratoryResult.cs",
+              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Domain\\Entities\\LaboratoryResult.cs",
+              "RelativeDocumentMoniker": "PatientManagerApp.Core.Domain\\Entities\\LaboratoryResult.cs",
+              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Domain\\Entities\\LaboratoryResult.cs",
+              "RelativeToolTip": "PatientManagerApp.Core.Domain\\Entities\\LaboratoryResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:27:02.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LaboratoryTest.cs",
+              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Domain\\Entities\\LaboratoryTest.cs",
+              "RelativeDocumentMoniker": "PatientManagerApp.Core.Domain\\Entities\\LaboratoryTest.cs",
+              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Domain\\Entities\\LaboratoryTest.cs",
+              "RelativeToolTip": "PatientManagerApp.Core.Domain\\Entities\\LaboratoryTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:27:01.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SaveDoctorViewModel.cs",
               "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\ViewModels\\Doctor\\SaveDoctorViewModel.cs",
               "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\ViewModels\\Doctor\\SaveDoctorViewModel.cs",
               "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\ViewModels\\Doctor\\SaveDoctorViewModel.cs",
               "RelativeToolTip": "PatientManagerApp.Core.Application\\ViewModels\\Doctor\\SaveDoctorViewModel.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAA/wB8AAAA+AAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T15:26:05.862Z",
+              "WhenOpened": "2024-06-12T19:26:56.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LaboratoryResultViewModel.cs",
+              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\ViewModels\\LaboratoryResult\\LaboratoryResultViewModel.cs",
+              "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\ViewModels\\LaboratoryResult\\LaboratoryResultViewModel.cs",
+              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\ViewModels\\LaboratoryResult\\LaboratoryResultViewModel.cs",
+              "RelativeToolTip": "PatientManagerApp.Core.Application\\ViewModels\\LaboratoryResult\\LaboratoryResultViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:26:55.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SaveLaboratoryResultViewModel.cs",
+              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\ViewModels\\LaboratoryResult\\SaveLaboratoryResultViewModel.cs",
+              "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\ViewModels\\LaboratoryResult\\SaveLaboratoryResultViewModel.cs",
+              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\ViewModels\\LaboratoryResult\\SaveLaboratoryResultViewModel.cs",
+              "RelativeToolTip": "PatientManagerApp.Core.Application\\ViewModels\\LaboratoryResult\\SaveLaboratoryResultViewModel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAYwAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:25:52.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Services\\PatientService.cs",
+              "RelativeDocumentMoniker": "PatientManagerApp.Core.Application\\Services\\PatientService.cs",
+              "ToolTip": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp.Core.Application\\Services\\PatientService.cs",
+              "RelativeToolTip": "PatientManagerApp.Core.Application\\Services\\PatientService.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAewEEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T16:08:45.769Z",
               "EditorCaption": ""
             }
           ]

@@ -14,7 +14,7 @@
     <div class="card" style="width: 24rem;">
         <div class="card-body">
             <h5 class="card-title text-center">Register</h5>
-            <form method="post" asp-controller="User" asp-action="@(User == null ? "Register" : "Update" )">
+            <form method="post" asp-controller="User" asp-action="@((Model.Id == 0 || User == null ) ? "Register" : "Update" )">
                 <div class="row mb-3">
                     <div class="col">
                         <label asp-for="Name" class="form-label">Name</label>

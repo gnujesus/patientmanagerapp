@@ -1,0 +1,68 @@
+﻿@model SavePatientViewModel
+
+@{
+    bool editMode = Model.Id != 0;
+}
+
+<div class="container-fluid d-flex justify-content-center align-items-center">
+    <div class="card" style="width: 30rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">Register Patient</h5>
+            <form method="post" asp-controller="Patient" asp-action="@(editMode ? "Update" : "Save")" enctype="multipart/form-data">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label asp-for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control" asp-for="Name">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="col">
+                        <label asp-for="LastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" asp-for="LastName">
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" asp-for="Email">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" asp-for="PhoneNumber">
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Address" class="form-label">Address</label>
+                    <input type="text" class="form-control" asp-for="Address">
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="BirthDate" class="form-label">Birth Date</label>
+                    <input type="date" class="form-control" asp-for="BirthDate">
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" asp-for="IsSmoker">
+                    <label class="form-check-label" asp-for="IsSmoker">Smoker</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" asp-for="HasAlergies">
+                    <label class="form-check-label" asp-for="HasAlergies">Has Allergies</label>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="File" class="form-label">Picture</label>
+                    <input class="form-control" type="file" asp-for="File">
+                    <span asp-validation-for="File" class="text-danger"></span>
+                </div>
+
+                @if (editMode)
+                {
+                    <input type="hidden" asp-for="Id" style="position:absolute;"/>
+                    <input type="hidden" asp-for="ClinicId" style="position:absolute;"/>
+                }
+
+                <button type="submit" class="btn btn-success w-100">Save</button>
+            </form>
+        </div>
+    </div>
+</div>

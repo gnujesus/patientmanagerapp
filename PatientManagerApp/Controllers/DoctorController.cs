@@ -66,6 +66,32 @@ namespace PatientManagerApp.Controllers
             return RedirectToRoute(new { controller = "Home", action = "Index" });
         }
 
+        public async Task<IActionResult> Update(int id)
+        {
+            return View("Save", await _doctorService.GetByIdCreateViewModel(id));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(SaveDoctorViewModel vm)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(vm);
+            }
+
+            vm.PicturePath = UploadFile(vm.File, vm.Id);
+            await _doctorService.Update(vm);
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _doctorService.Delete(id);
+            return RedirectToAction("Index");
+        }
+
         private string UploadFile(IFormFile file, int id)
         {
             string basePath = $"/static/Images/Doctors/{id}";

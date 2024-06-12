@@ -123,6 +123,10 @@ namespace PatientManagerApp.Infrastructure.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ClinicId");
@@ -141,6 +145,9 @@ namespace PatientManagerApp.Infrastructure.Persistence.Migrations
                     b.Property<int>("ClinicId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("LaboratoryResultId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -149,6 +156,8 @@ namespace PatientManagerApp.Infrastructure.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ClinicId");
+
+                    b.HasIndex("LaboratoryResultId");
 
                     b.ToTable("LaboratoryTests", (string)null);
                 });
@@ -198,7 +207,7 @@ namespace PatientManagerApp.Infrastructure.Persistence.Migrations
                         .IsUnicode(false)
                         .HasColumnType("varchar(15)");
 
-                    b.Property<string>("Picture")
+                    b.Property<string>("PicturePath")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
@@ -309,6 +318,10 @@ namespace PatientManagerApp.Infrastructure.Persistence.Migrations
                         .HasForeignKey("ClinicId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("PatientManagerApp.Core.Domain.Entities.LaboratoryResult", null)
+                        .WithMany("LaboratoryTests")
+                        .HasForeignKey("LaboratoryResultId");
                 });
 
             modelBuilder.Entity("PatientManagerApp.Core.Domain.Entities.Patient", b =>
@@ -345,6 +358,11 @@ namespace PatientManagerApp.Infrastructure.Persistence.Migrations
             modelBuilder.Entity("PatientManagerApp.Core.Domain.Entities.Doctor", b =>
                 {
                     b.Navigation("Appointments");
+                });
+
+            modelBuilder.Entity("PatientManagerApp.Core.Domain.Entities.LaboratoryResult", b =>
+                {
+                    b.Navigation("LaboratoryTests");
                 });
 
             modelBuilder.Entity("PatientManagerApp.Core.Domain.Entities.Patient", b =>

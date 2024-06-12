@@ -4,8 +4,30 @@
     ViewBag.Title = "Doctors";
 }
 
+@foreach (var entity in Model)
+{
+    <div class="modal fade" id="example-modal-@(entity.Id)" tabindex="@entity.Id" aria-labelledby="@(entity.Name + "-modal-label")" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="@(entity.Name + "-modal-label")">Remove product</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete @entity.Name? This can't be undone.
+                </div>
+                <div class="modal-footer">
+                    <form method="post" asp-controller="Doctor" asp-action="Delete">
+                        <input type="hidden" name="Id" value="@entity.Id" />
+                        <button type="submit" class="btn btn-danger">Remove</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}
 
-<a class="btn btn-success">Create</a>
+<a class="btn btn-success" asp-controller="Doctor" asp-action="Save">Create</a>
 <div class="container mt-4">
     <div class="row">
         @foreach(DoctorViewModel entity in @Model)
@@ -20,8 +42,10 @@
                             <small class="text-muted">Phone: @entity.PhoneNumber</small>
                         </p>
                         <div class="d-flex justify-content-between">
-                            <a asp-route-id="@entity.Id" asp-controller="Doctor" asp-action="Save" class="btn btn-warning">Edit</a>
-                            <a href="/Doctors/Delete/" class="btn btn-danger">Delete</a>
+                            <a asp-controller="Doctor" asp-action="Update"  asp-route-id="@entity.Id" class="btn btn-warning">Edit</a>
+                            <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#example-modal-@(entity.Id)">
+                                Delete
+                            </button>
                         </div>
                     </div>
                 </div>

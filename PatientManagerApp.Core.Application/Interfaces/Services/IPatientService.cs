@@ -9,5 +9,6 @@ namespace PatientManagerApp.Core.Application.Interfaces.Services
 {
     public interface IPatientService : IGenericService<PatientViewModel, SavePatientViewModel>
     {
+        new Task<SavePatientViewModel> Insert(SavePatientViewModel vm);
     }
 }

@@ -13,7 +13,7 @@
     };
 }
 
-<a class="btn btn-success">Create</a>
+<a class="btn btn-success" asp-controller="LaboratoryResult" asp-action="Save">Create</a>
 <div class="container mt-4">
     <h2 class="mb-4">Laboratory Results List</h2>
     <ul class="list-group">
@@ -27,8 +27,8 @@
                     <small class="text-muted">Clinic ID: @result.ClinicId</small>
                 </p>
                 <div class="d-flex justify-content-end">
-                    <a href="/LaboratoryResults/Edit/@result.Id" class="btn btn-warning btn-sm me-2">Edit</a>
-                    <a href="/LaboratoryResults/Delete/@result.Id" class="btn btn-danger btn-sm">Delete</a>
+                    <a class="btn btn-warning btn-sm me-2">Edit</a>
+                    <a class="btn btn-danger btn-sm">Delete</a>
                 </div>
             </li>
         }
