@@ -13,7 +13,7 @@ namespace PatientManagerApp.Core.Application.ViewModels.Doctor
         public string LastName { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
-        public string Picture { get; set; }
+        public string PicturePath { get; set; }
         public int ClinicId { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<DoctorViewModel>
+
+@{
     ViewBag.Title = "Doctors";
 }
 
@@ -6,20 +8,20 @@
 <a class="btn btn-success">Create</a>
 <div class="container mt-4">
     <div class="row">
-        @for (int i = 0; i < 9; i++)
+        @foreach(DoctorViewModel entity in @Model)
         {
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Doctor Photo">
+                    <img src="@entity.PicturePath" class="card-img-top" alt="@entity.Name @entity.LastName">
                     <div class="card-body">
-                        <h5 class="card-title">Dr. John Doe</h5>
+                        <h5 class="card-title">Dr. @entity.Name @entity.LastName</h5>
                         <p class="card-text">
-                            <small class="text-muted">Email: johndoe@example.com</small><br>
-                            <small class="text-muted">Phone: (123) 456-7890</small>
+                            <small class="text-muted">Email: @entity.Email</small><br>
+                            <small class="text-muted">Phone: @entity.PhoneNumber</small>
                         </p>
                         <div class="d-flex justify-content-between">
-                            <a href="/Doctors/Edit/@i" class="btn btn-warning">Edit</a>
-                            <a href="/Doctors/Delete/@i" class="btn btn-danger">Delete</a>
+                            <a asp-route-id="@entity.Id" asp-controller="Doctor" asp-action="Save" class="btn btn-warning">Edit</a>
+                            <a href="/Doctors/Delete/" class="btn btn-danger">Delete</a>
                         </div>
                     </div>
                 </div>

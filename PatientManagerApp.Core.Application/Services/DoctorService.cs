@@ -19,7 +19,7 @@ namespace PatientManagerApp.Core.Application.Services
             _doctorRepository = repository; 
         }
 
-        public async Task Insert(SaveDoctorViewModel vm)
+        public async Task<SaveDoctorViewModel> Insert(SaveDoctorViewModel vm)
         {
             Doctor doctor = new()
             {
@@ -27,11 +27,24 @@ namespace PatientManagerApp.Core.Application.Services
                 LastName = vm.LastName,
                 Email = vm.Email,
                 PhoneNumber = vm.PhoneNumber,
-                Picture = vm.Picture,
+                PicturePath = vm.PicturePath,
                 ClinicId = vm.ClinicId,
             };
 
-            await _doctorRepository.InsertAsync(doctor);
+            doctor = await _doctorRepository.InsertAsync(doctor);
+
+            SaveDoctorViewModel doctorVm = new()
+            {
+                Id = doctor.Id,
+                Name = doctor.Name,
+                LastName = doctor.LastName,
+                Email = doctor.Email,
+                PhoneNumber = doctor.PhoneNumber,
+                PicturePath = doctor.PicturePath,
+                ClinicId = doctor.ClinicId,
+            };
+
+            return doctorVm;
         }
 
         public async Task Delete(int id)
@@ -42,16 +55,14 @@ namespace PatientManagerApp.Core.Application.Services
 
         public async Task Update(SaveDoctorViewModel vm)
         {
-            Doctor doctor = new()
-            {
-                Id = vm.Id,
-                Name = vm.Name,
-                LastName = vm.LastName,
-                Email = vm.Email,
-                PhoneNumber = vm.PhoneNumber,
-                Picture = vm.Picture,
-                ClinicId = vm.ClinicId,
-            };
+            Doctor doctor = await _doctorRepository.GetByIdAsync(vm.Id);
+            doctor.Id = vm.Id;
+            doctor.Name = vm.Name;
+            doctor.LastName = vm.LastName;
+            doctor.Email = vm.Email;
+            doctor.PhoneNumber = vm.PhoneNumber;
+            doctor.PicturePath = vm.PicturePath;
+            doctor.ClinicId = vm.ClinicId;
 
             await _doctorRepository.UpdateAsync(doctor);
         }
@@ -68,7 +79,7 @@ namespace PatientManagerApp.Core.Application.Services
                 Email = doctor.Email,
                 PhoneNumber = doctor.PhoneNumber,
                 ClinicId = doctor.ClinicId,
-                Picture = doctor.Picture
+                PicturePath = doctor.PicturePath
             }).ToList();
         }
 
@@ -82,11 +93,17 @@ namespace PatientManagerApp.Core.Application.Services
                 LastName = doctor.LastName,
                 Email = doctor.Email,
                 PhoneNumber = doctor.PhoneNumber,
-                Picture = doctor.Picture,
+                PicturePath = doctor.PicturePath,
                 ClinicId = doctor.ClinicId,
             };
 
             return vm;
+        }
+
+        // Explicit implementation to satisfy IGenericService
+        async Task IGenericService<DoctorViewModel, SaveDoctorViewModel>.Insert(SaveDoctorViewModel vm)
+        {
+            await Insert(vm);
         }
     }
 }

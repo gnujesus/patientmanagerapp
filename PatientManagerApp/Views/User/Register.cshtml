@@ -57,10 +57,11 @@
                         </select>
                         <span asp-validation-for="UserType" class="text-danger"></span>
                     </div>
+
+                    <input type="hidden" asp-for="Id" style="position: absolute">
+                    <input type="hidden" asp-for="ClinicId" style="position: absolute">
                 }
 
-                <input type="hidden" asp-for="Id" style="position: absolute">
-                <input type="hidden" asp-for="ClinicId" style="position: absolute">
 
                 <button type="submit" class="btn btn-primary w-100">Register</button>
             </form>

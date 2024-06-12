@@ -18,4 +18,8 @@
     <ProjectReference Include="..\PatientManagerApp.Infrastructure.Persistence\PatientManagerApp.Infrastructure.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\static\Images\" />
+  </ItemGroup>
+
 </Project>

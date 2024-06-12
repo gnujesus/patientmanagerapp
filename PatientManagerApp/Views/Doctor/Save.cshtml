@@ -1,0 +1,49 @@
+﻿@model SaveDoctorViewModel;
+
+@{
+    bool editMode = Model.Id == 0 ? false : true;
+}
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card" style="width: 30rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">Register Doctor</h5>
+            <form method="post" asp-controller="Doctor" asp-action="Save" enctype="multipart/form-data">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label asp-for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control" asp-for="Name">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="col">
+                        <label asp-for="LastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" asp-for="LastName">
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" asp-for="Email">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" asp-for="PhoneNumber">
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="File" class="form-label">Picture</label>
+                    <input class="form-control" asp-for="File" required>
+                    <span asp-validation-for="File" class="text-danger"></span>
+                </div>
+
+                @if (editMode)
+                {
+                    <input type="hidden" value="@Model.Id" asp-for="Id" style="position:absolute;"/>
+                }
+
+                <button type="submit" class="btn btn-success w-100">Save</button>
+            </form>
+        </div>
+    </div>
+</div>

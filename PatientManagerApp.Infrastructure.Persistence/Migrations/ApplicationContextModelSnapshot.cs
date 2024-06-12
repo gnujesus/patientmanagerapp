@@ -95,7 +95,7 @@ namespace PatientManagerApp.Infrastructure.Persistence.Migrations
                         .IsUnicode(false)
                         .HasColumnType("varchar(15)");
 
-                    b.Property<string>("Picture")
+                    b.Property<string>("PicturePath")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");

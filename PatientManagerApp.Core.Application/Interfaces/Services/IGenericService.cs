@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PatientManagerApp.Core.Application.Interfaces.Services
+﻿namespace PatientManagerApp.Core.Application.Interfaces.Services
 {
     public interface IGenericService<ViewModel, SaveViewModel>
         where ViewModel : class

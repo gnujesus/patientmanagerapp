@@ -7,5 +7,7 @@ using System.Threading.Tasks;
 
 namespace PatientManagerApp.Core.Application.Interfaces.Services
 {
-    public interface IDoctorService : IGenericService<DoctorViewModel, SaveDoctorViewModel> { }
+    public interface IDoctorService : IGenericService<DoctorViewModel, SaveDoctorViewModel> {
+        new Task<SaveDoctorViewModel> Insert(SaveDoctorViewModel vm);
+    }
 }

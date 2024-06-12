@@ -245,6 +245,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\wwwroot\\static\\Images\\Doctors\\3\\proyecto-1.jpg.jpg",
+      "PackagePath": "staticwebassets\\static\\Images\\Doctors\\3\\proyecto-1.jpg.jpg"
+    },
+    {
+      "Id": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\wwwroot\\static\\Images\\Doctors\\4\\me-shorter-2.jpg.jpg",
+      "PackagePath": "staticwebassets\\static\\Images\\Doctors\\4\\me-shorter-2.jpg.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApp.PatientManagerApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

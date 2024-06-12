@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ooT8hEcjF/J5suVQDQUkPG2d/nS7AlMWHjZq3cM5qiI=",
+  "Hash": "cYEJwALlzEBhX/AUbjFmoaNNc0Pn2EEnqhjkQHnKrw0=",
   "Source": "WebApp.PatientManagerApp",
   "BasePath": "_content/WebApp.PatientManagerApp",
   "Mode": "Default",
@@ -1193,6 +1193,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\wwwroot\\static\\Images\\Doctors\\3\\proyecto-1.jpg.jpg",
+      "SourceId": "WebApp.PatientManagerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\wwwroot\\",
+      "BasePath": "_content/WebApp.PatientManagerApp",
+      "RelativePath": "static/Images/Doctors/3/proyecto-1.jpg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\static\\Images\\Doctors\\3\\proyecto-1.jpg.jpg"
+    },
+    {
+      "Identity": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\wwwroot\\static\\Images\\Doctors\\4\\me-shorter-2.jpg.jpg",
+      "SourceId": "WebApp.PatientManagerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\projects\\itla\\PatientManagerApp\\PatientManagerApp\\wwwroot\\",
+      "BasePath": "_content/WebApp.PatientManagerApp",
+      "RelativePath": "static/Images/Doctors/4/me-shorter-2.jpg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\static\\Images\\Doctors\\4\\me-shorter-2.jpg.jpg"
     }
   ]
 }

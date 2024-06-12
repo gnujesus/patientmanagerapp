@@ -113,7 +113,7 @@ namespace PatientManagerApp.Infrastructure.Persistence.Contexts
                 .IsUnicode(false);
 
             modelBuilder.Entity<Doctor>()
-                .Property(d => d.Picture)
+                .Property(d => d.PicturePath)
                 .HasMaxLength(255);
 
             modelBuilder.Entity<Doctor>()
